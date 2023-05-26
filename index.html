@@ -7,25 +7,28 @@
 	<style>
 		/* Add your own styles here */
 		body {
+			max-width: 1000px;
 			font-family: Arial, sans-serif;
 			background-color: #f1f1f1;
-			margin: 0;
+			margin: auto;
 			padding: 0;
 		}
 		header {
+			margin: 10px;
 			background-color: #333;
 			color: white;
-			padding: 20px;
-			text-align: center;
+
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+			border-radius: 5px;
 		}
 		h1 {
-			margin: 0;
+			margin: auto;
 			font-size: 36px;
 			font-weight: normal;
 		}
 		section {
 			padding: 20px;
-			margin: 20px;
+			margin: 10px;
 			background-color: white;
 			box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 			border-radius: 5px;
@@ -34,10 +37,16 @@
 			font-size: 24px;
 			margin: 0 0 10px;
 		}
+		section h3 {
+			font-size: 20px;
+			margin: 0 0 0px;
+			text-align: left;
+		}
 		section p {
 			font-size: 18px;
 			margin: 0 0 20px;
 		}
+		
 		ul {
 			list-style-type: none;
 			padding: 0;
@@ -53,34 +62,38 @@
 		li a:hover {
 			color: #666;
 		}
-		.photo {
+
+		.flex-container {
 			display: flex;
-			justify-content: center;
 			align-items: center;
-			margin-bottom: 20px;
 		}
-		.photo img {
-			max-width: 100%;
-			border-radius: 50%;
-			box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    
+		#photo img {
+			max-width: 100px;
+			border-radius: 5px;
+			margin: 15px;
 		}
 	</style>
 </head>
 <body>
 	<header>
-		<h1 style="text-align:left;"><strong>Li Fang, Ph.D.</strong></h1>
-		<p style="text-align:left; font-size: 20px;">Associate Professor & Yat-sen Scholar</br>
-		Department of Genetics and Biomedical Informatics</br>
-		Zhongshan School of Medicine, Sun Yat-sen University</p>
+		<div class="flex-container">
+			<div id="photo">
+				<img src="images/fangli.jpg" alt="Li Fang's Photo">
+			</div>
+			<div>
+				<h1 style="text-align:left;"><strong>Li Fang, Ph.D.</strong></h1>
+				<p style="text-align:left;">Associate Professor & Yat-sen Scholar</br>
+				Department of Genetics and Biomedical Informatics</br>
+				Zhongshan School of Medicine, Sun Yat-sen University</p>
+			</div>
+		</div>
 	</header>
 	<main>
 		<section>
-			<div>
-				<div>
-					<h2>Biosketch</h2>
-					<p>Dr. Fang received his Ph.D. from Peking University. He had postdoctoral training in Columbia University and the Children’s Hospital of Philadelphia. In November 2022, he joined Sun Yat-sen University and won the Yat-sen Scholar Award. He is now an Associate Professor in Department of Genetics and Biomedical Informatics, Zhongshan School of Medicine. Dr. Fang is a bioinformatics researcher with expertise in human genetic variation. His research interests include the development of computational tools for detection and annotation of genetic variants that may be involved in human diseases. </p>
-				</div>
-			</div>
+			<h2>Biosketch</h2>
+			<p>Dr. Fang received his Ph.D. from Peking University. He had postdoctoral training in Columbia University and the Children’s Hospital of Philadelphia. In November 2022, he joined Sun Yat-sen University and won the Yat-sen Scholar Award. He is now an Associate Professor in Department of Genetics and Biomedical Informatics, Zhongshan School of Medicine. Dr. Fang is a bioinformatics researcher with expertise in human genetic variation. His research interests include the development of computational tools for detection and annotation of genetic variants that may be involved in human diseases. </p>
+
 		</section>
 		<section>
 			<h2>Selected Publications</h2>
